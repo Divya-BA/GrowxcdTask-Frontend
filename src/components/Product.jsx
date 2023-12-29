@@ -16,7 +16,7 @@ const ProductList = ({ addToCart, searchTerm, notify }) => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/products");
+        const response = await axios.get("https://point-of-sale-system-dvya.onrender.com/products");
         setProducts(response.data);
       } catch (error) {
         console.error("Error fetching products:", error.message);
@@ -31,7 +31,7 @@ const ProductList = ({ addToCart, searchTerm, notify }) => {
   useEffect(() => {
     const fetchOffers = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/offers");
+        const response = await axios.get("https://point-of-sale-system-dvya.onrender.com/offers");
         setOffers(response.data);
       } catch (error) {
         console.error("Error fetching offers:", error.message);
