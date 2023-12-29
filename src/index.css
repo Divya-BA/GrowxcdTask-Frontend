@@ -1,0 +1,13 @@
+body{
+  background-color: white;
+  font-family: cursive;
+
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: scroll;
+}
+
+/* ... (rest of your CSS) */
